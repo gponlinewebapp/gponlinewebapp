@@ -1,0 +1,44 @@
+.contact_txtarea{
+    width: 16.5rem;
+}
+
+.contactSection .box_1{
+    margin-bottom: 0;
+}
+
+.contactSection .information__item {
+    margin-bottom: 2rem;
+    padding: 0rem 0rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2rem;
+}
+
+.google_map{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.contactSection .welcome__item {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*Mesia Query ==================================================== */
+
+
+/* Tablet */
+@media (min-width: 40em) {
+    .contact_txtarea{
+        width: 100%;
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 64em) {
+    
+    }

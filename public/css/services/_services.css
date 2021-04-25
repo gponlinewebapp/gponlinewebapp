@@ -1,0 +1,253 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* body{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: red;
+} */
+
+ul{
+    margin: 0 auto;
+    padding: 0 ;
+    list-style-type: none;
+    margin-left: 45px;
+}
+
+li{
+    display: inline-block;
+    margin-right: 100px;
+    border-radius: 5px;
+    padding: 3px;
+    height: 50%;
+}
+
+.head{
+    text-align: center;
+    background-image: url("istockphoto-1165046681-612x612.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    padding: 3%;
+}
+
+/* nav{
+    background-color: rgb(236, 232, 232);
+    padding: 10px;
+    height: 115px;
+    width: 105%;
+    float: right;
+    margin-left: 50px;
+} */
+
+li:first-child{
+    margin-left: 0;
+
+}
+
+.separate{
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-left: 15px;
+    
+}
+
+a{
+    text-decoration: none;
+    /* color:whitesmoke; */
+}
+
+a:hover{
+    text-decoration: solid;
+    color:#fff;
+}
+
+
+.head{
+    text-align: center;
+    background-image: url("istockphoto-1165046681-612x612.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    padding: 3%;
+}
+
+h1{
+    margin-top: 40px;
+}
+
+
+.CR{
+    margin-bottom: 180px;
+    float: right;
+    margin-right: 200px;
+    padding: 25px;
+}
+
+
+#extracontact{
+    float:left;
+    padding: 11%;
+    margin-bottom: 50px;
+}
+
+#privacy{
+    float: right;
+    padding: 11%;
+    margin-bottom: 50px;
+}
+
+.callee{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(37, 37, 37);
+    border: 3px rgb(0, 0, 0);
+    color: rgb(160, 159, 159);
+    border-style: solid;
+    margin-top: 200px;
+}
+
+.copyright{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(37, 37, 37);
+    color: rgb(160, 159, 159);
+    border: 3px rgb(160, 159, 159);
+    border-style: solid;
+}
+
+.grids{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 35px;
+}
+
+.right-side{
+    padding: 25px;
+    float:inherit;
+}
+
+#bar{
+    /* height: 510px; */
+    /* width: 1200px; */
+    width: 100%;
+    padding: 50px;
+    background-color: rgb(231, 231, 231);
+    margin: auto;
+    float: inherit;
+}
+
+.lo{
+    padding: 7px; 
+    width: 150px;
+    margin-left: 45px;
+}
+
+.hi{
+    padding: 7px; 
+    width: 420px;
+    margin-left: 4px;
+    height: 400px;
+    float: right;
+}
+
+.right-side h3{
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+/*--------- Media Queries -----------*/
+@media screen and (max-width: 800px){
+    .grids{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 4%;
+        margin-bottom: 70px;
+        font-size: 12.5px;
+        height: 800px;
+    }
+
+    #bar{
+        float:clear;
+        height: 800px;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .right-side{
+        float:clear;
+    }
+
+    .hi{
+        padding: 20px;
+        width: 450px;
+    }
+
+
+@media screen and (max-width: 630px){
+    body{
+        width: 100%;
+    }
+
+    .head{
+        width: 95%;
+    }
+
+    .hi{
+        height:200px;
+        width: 90%;
+        padding: 2%;
+    }
+
+    .lo{
+        height: 100px;
+    }
+
+    .grids{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 2%;
+        margin-bottom: 70px;
+        font-size: 12.5px;
+        height: 840px;
+        width: 85%;
+    }
+
+    #bar{
+        float:clear;
+        height: 800px;
+        margin: 0 auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        width: 100%;
+    }
+
+    .right-side{
+        float:clear;
+    }
+}
+
+.callee{
+    width: 95%;
+    height: 200px;
+    margin-top: 200px;
+}
+
+.copyright{
+    width: 95%;
+    height: 120px;
+}
+}

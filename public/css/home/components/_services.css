@@ -1,0 +1,90 @@
+/*Section Services=========================================================================*/
+.services {
+  background-color: #E6F4EE;
+}
+
+.service__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 1.875rem;
+}
+
+.service__item {
+  border-radius: 0.3125rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 3px 12px #00000026;
+  box-shadow: 0px 3px 12px #00000026;
+  background-color: white;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+/* .service__item:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+} */
+
+.service__image {
+  height: 12.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Image hover effect==================================================== */
+.service__item {
+  position: relative;
+
+}
+
+
+.image__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008000d2;
+  overflow: hidden;
+  width: 100%;
+  height: 20%;
+  transition: .5s ease;
+}
+
+.service__item:hover .image__text {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/*Mesia Query ==================================================== */
+
+/*Services grid for tablet */
+@media (min-width: 40em) {
+  .service__grid {
+    -ms-grid-columns: (1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Services grid for desktop */
+@media (min-width: 64em) {
+  .service__grid {
+    -ms-grid-columns: (1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

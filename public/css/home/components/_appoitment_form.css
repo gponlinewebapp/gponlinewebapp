@@ -1,0 +1,17 @@
+.genter_box {
+    /* border: 1px solid red; */
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+.genter_box span{
+  font-weight: 600;
+}
+
+input[type='radio'] {
+    width: 25px;
+    position: relative;
+    top: 3px;
+    margin-left: 20px;
+}

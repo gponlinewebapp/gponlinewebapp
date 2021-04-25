@@ -1,0 +1,66 @@
+/*Banner Section*/
+.banner {
+  position: relative;
+  background-color: #fafafa;
+  /* background-image: url("/images/bg-banner.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5rem;
+}
+
+a.button.banner__cta .fa-video {
+    font-size: 1rem;
+    padding: 0 .5rem;
+}
+
+
+@media (min-width: 40em) {
+  .banner {
+    min-height: 25rem;
+    background-position: center 40%;
+
+  }
+}
+
+@media (min-width: 64em) {
+  .banner {
+    height: 55rem;
+    background-position: center;
+
+  }
+
+  .banner__text p {
+    width: 100% !important;
+  }
+}
+
+.banner__text {
+  width: 270px;
+}
+
+.banner__text h1 {
+  font-size: 1.31rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.banner__text p {
+  /* text-align: center; */
+  color: #e0dede;
+  width: 164px;
+}
+
+
+@media (min-width: 64em) {
+  .banner__text h1 {
+    font-size: 3.31rem;
+  }
+
+  .banner__text {
+    width: 35rem;
+    padding-top: 15rem;
+  }
+
+}

@@ -1,0 +1,94 @@
+/* Welcome section*/
+.welcome {
+  background-color: #F4F4F4;
+  text-align: center;
+
+}
+
+@media (min-width: 40em) {
+  .welcome {
+    text-align: left;
+  }
+}
+
+.welcome__intro {
+  margin-bottom: 3.75rem;
+}
+
+.corona__header {
+  margin-bottom: 1rem;
+}
+
+.corona__header h3 {
+  display: inline-block;
+  border-bottom: 0.125rem solid red;
+  font-size: 1.5rem;
+
+}
+
+.corona__item {
+  background-color: #c4c4c430;
+}
+
+.corona-btn {
+  background-color: red;
+  border: 0px;
+}
+
+.welcome__description {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.welcome__description p {
+  margin-bottom: .50rem;
+}
+
+.feature__item {
+  padding: 0.9375rem;
+}
+
+.welcome__item {
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+}
+
+/*Mesia Query ==================================================== */
+
+
+/* Tablet */
+@media (min-width: 40em) {
+  .welcome__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .welcome__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+/* Desktop */
+@media (min-width: 64em) {
+  .welcome__intro {
+    width: 60%;
+  }
+
+  .corona__intro {
+    margin-bottom: 0.75rem;
+  }
+
+  .welcome__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 1rem;
+  }
+
+}

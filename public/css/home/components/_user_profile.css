@@ -1,0 +1,105 @@
+#user__edit-btn,
+#user__delete-Btn {
+  margin: 0.5rem 0;
+  /* width: 40%; */
+}
+
+
+/* user appoint table =========================*/
+/* .table-container {
+    width: 70%;
+} */
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.table-container {
+  margin: 3rem 0;
+}
+
+.user__appointment h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+table tr:nth-child(even) {
+  background-color: #1c676631;
+}
+
+table tr:hover {
+  background-color: #1c67664b;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #2b671c;
+  color: white;
+
+}
+
+.fas {
+
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.fa-edit {
+  color: #1c6766;
+}
+
+.fa-trash-alt {
+  color: red;
+}
+
+/* End of user appoint table =========================*/
+
+
+/*Mesia Query ==================================================== */
+
+/*Services grid for tablet */
+@media (min-width: 40em) {
+
+  #user__edit-btn,
+  #user__delete-Btn {
+    /* margin: 0.5rem 0; */
+    width: 40%;
+  }
+
+  .edit__user {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    /* margin-top: 3rem; */
+    /* margin-right: 0px; */
+    /* margin-bottom: 3rem; */
+    /* margin-left: 0px; */
+    /* flex-direction: column; */
+  }
+
+  .table-container {
+    /* width: 70%; */
+  }
+}
+
+/*Services grid for desktop */
+@media (min-width: 64em) {
+  .service__grid {
+    -ms-grid-columns: (1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

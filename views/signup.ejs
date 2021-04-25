@@ -1,0 +1,46 @@
+<!-- Section hero -->
+<section class="banner_header">
+
+  <img src="/images/Banner.png" alt="Banner image">
+  <div class="banner__title">
+    <h2>Sign up</h2>
+  </div>
+
+</section>
+
+<!-- Section Signup -->
+<section class="form">
+
+  <div class="form__content container container--pall">
+
+    <form class="form__box" id="signupform" method="POST" action="/users/signup">
+      <fieldset>
+        <legend>Register user </legend>
+
+        <%- include ("./partials/messages"); %>
+
+        <div class="form__content">
+          <input type="text" id="fname" name="fname" placeholder="First Name" required autofocus
+            value="<%= typeof fname != 'undefined' ? fname : '' %>">
+          <input type="text" id="lname" name="lname" placeholder="Last Name" required
+            value="<%= typeof lname != 'undefined' ? lname : '' %>">
+          <input type="tel" id="mobile" name="mobile" placeholder="Mobile" required pattern="[0-9]{10}"
+            title=" Example: 0855642278 number must be 10 charaters"
+            value="<%= typeof mobile != 'undefined' ? mobile : '' %>">
+          <input type="email" id="email" name="email" placeholder="Email" required
+            value="<%= typeof email != 'undefined' ? email : '' %>">
+          <input type="email" id="email2" name="email2" placeholder="Re-enter email" required
+            value="<%= typeof email2 != 'undefined' ? email2 : '' %>">
+          <input type="password" id="password" name="password" placeholder="Password" required>
+          <input type="password" id="password2" name="password2" placeholder="Re-enter password" required>
+          <input type="text" id="address" name="address" placeholder="Address" required
+            value="<%= typeof address != 'undefined' ? address : '' %>">
+          <input class="form_btn" type="submit" value="Sign Up" id="signupValidation">
+          <p>
+            Have an account? <a class="a_hover" href="/users/login">Login</a>
+          </p>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>

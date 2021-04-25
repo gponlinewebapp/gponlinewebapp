@@ -1,0 +1,23 @@
+@import "home/_global.css";
+
+/* components import */
+@import "home/components/_animations.css";
+@import "home/components/_header.css";
+@import "home/components/_banner.css";
+@import "home/components/_welcome.css";
+@import "home/components/_services.css";
+@import "home/components/_information.css";
+@import "home/components/_login_signup.css";
+@import "home/components/_user_profile.css";
+@import "home/components/_footer.css";
+@import "home/components/_appoitment_form.css";
+
+/* About page */
+@import "aboutus/about.css";
+
+
+/*Contact Us page*/
+@import "contact/_contact.css";
+
+/* Services page */
+@import"services/_services.css";

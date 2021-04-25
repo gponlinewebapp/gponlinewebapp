@@ -1,0 +1,27 @@
+<!-- Section hero -->
+<section class="banner_header">
+  <img src="/images/Banner.png" alt="Banner image">
+  <div class="banner__title">
+    <h2>Appointment form</h2>
+  </div>
+</section>
+
+<!-- Section Signup -->
+<section class="form appoitment_form">
+  <div class="form__content container container--pall">
+    <form class="form__box" id="appoitmentForm" method="post" action="/users/appointment_form">
+      <fieldset>
+        <legend>Appointment</legend>
+        <%- include ("./partials/messages"); %>
+        <div class="form__content">
+          <input type="text" id="symptoms" name="symptoms" placeholder="Symptoms" required>
+          <input type="text" id="gender" name="gender" placeholder="Gender F or M" required>
+          <input type="text" id="video_call" name="video" placeholder="Request a video call: Y/N" required>
+          <input type="date" id="date" name="date" required>
+          <input type="time" id="time" name="time" required>
+          <input class="form_btn" type="submit" value="Submit form" id="user_appointValidation">
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>

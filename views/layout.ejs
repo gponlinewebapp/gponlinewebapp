@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/images/favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Bootswatch -->
+  <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>
+    <%= (typeof title !="undefined" ? title : "" ) %> | GPonline
+  </title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="overlay has-fade"></div>
+
+    <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+      <a href="/" class="header__logo">
+        <img src="/images/logo.png" alt="GPonline" />
+      </a>
+      <!-- Mobile burger menu button -->
+      <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+
+      <div class="header__links hide-for-mobile">
+        <a href="/">Home</a><a href="/users/about">About</a><a href="/users/services">Services</a><a
+          href="/users/contact">Contact us</a>
+      </div>
+
+      <% if(!currentUser){ %>
+      <div class="header__links hide-for-mobile" id="login__signup">
+        <a href="/users/login">Login</a>
+        <a href="/users/signup">Signup</a>
+      </div>
+      <% } else {%>
+
+      <div class="user__nav header__links hide-for-mobile">
+        <a href="/users/videochat" target="_blank"><i class="fas fa-video"></i></a>
+        <h5 class="userinfo">
+          <%=user.fname %>
+        </h5>
+        <div id="img-avatar" class="dropdown">
+          <%=user.fname.substring(0, 1)+user.lname.substring(0, 1) %>
+          <div class="dropdown-content">
+            <a href="/users/userprofile">User profile</a>
+          </div>
+        </div>
+        <div class="logout_box">
+          <a href="/users/logout" title="Logout"><i class=" fas fa-sign-out-alt"></i></a>
+        </div>
+      </div>
+      <%} %>
+
+    </nav>
+
+    <!-- Mobile nav menu -->
+    <div class="header__menu has-fade">
+      <a href="/">Home</a>
+      <a href="/users/about">About</a>
+      <a href="/users/services">Services</a>
+      <a href="/users/contact">Contact us</a>
+      <% if(!currentUser){ %>
+      <div id="login__signup-mobile">
+        <a href="/users/login">Login</a>
+        <a href="/users/signup">Signup</a>
+      </div>
+      <% } else {%>
+      <div class="user__nav">
+        <div class="user__nav-mobile">
+          <div id="img-avatar">
+            <%=user.fname.substring(0, 1)+user.lname.substring(0, 1) %>
+          </div>
+          <h5 class="userinfo">User:<%= user.fname%>
+          </h5>
+          <a href="/users/userprofile">User profile</a>
+          <a href="https://gponline-video-chat.netlify.app/" target="_blank"><i class="fas fa-video"></i></a>
+        </div>
+        <div class="logout_box">
+          <a href="/users/logout" title="Logout">Log out</a>
+        </div>
+      </div>
+      <%} %>
+    </div>
+
+  </header>
+  <!--End of Header, navigation=================================== -->
+  <main>
+
+    <%- body %>
+
+  </main>
+
+  <footer class=" footer">
+
+    <div class="footer__content container container--pall">
+
+      <div class="footer__grid">
+
+        <div class="footer__item ">
+          <div class="footer__box-content">
+            <h3>Contact info</h3>
+            <ul class=" footer__contat-info">
+              <li>
+                <a href="tel:01 621 2288"><img src="/images/icon-phone.png" alt="icon-phone">01 621 3283</a>
+              </li>
+              <li>
+                <img src="/images/icon-mail.png" alt="icon-email">
+                <a href="mailto:info@gponline.com">info@gponline.com</a>
+              </li>
+            </ul>
+
+            <div class="social__media">
+              <div class="social__media-icons">
+                <a class="media-icon facebook" href="http://facebook.com" target="_blank"><i
+                    class="fab fa-facebook-f"></i></a>
+                <a class="media-icon" href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__item">
+          <div class="footer__box-content open__hours-box">
+            <h3>Privacy</h3>
+            <ul class="footer__privacy">
+              <li><a href="#">Privacy Statement</a></li>
+              <li><a href="#">Subject Access Requests</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>
+        &copy; Copyright 2021. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+
+  <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+/* Footer section*/
+
+.footer {
+  text-align: center;
+  background-color: #34383D;
+  color: #999;
+
+}
+
+.footer__item {
+  border: 1px solid #999;
+  border-radius: 0.3125rem;
+}
+
+.footer__box-content {
+  height: 100%;
+  padding: 2rem 0;
+  border-radius: 0.3125rem;
+}
+
+.footer__box-content h3 {
+  text-align: center;
+  padding: 1.75rem 0 1.3rem;
+  color: #999;
+  font-weight: 600;
+}
+
+.footer__box-content a {
+  color: #99998d;
+}
+
+.footer__contat-info,
+.footer__privacy {
+  width: 60%;
+  text-align: left;
+  margin: auto;
+  text-align: center;
+  list-style-type: none;
+  line-height: 1.5;
+}
+
+
+.footer__item {
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contat__info img {
+  position: relative;
+  top: 14px;
+  padding: 10px;
+  width: 38px;
+}
+
+.social__media {
+  text-align: center;
+}
+
+.social__media-icons {
+  margin-top: 1.25rem;
+}
+
+.media-icon {
+  border: 1px solid #999;
+  padding: 5px 8px;
+  margin: 0 10px;
+}
+
+.facebook {
+  padding: 5px 10px;
+}
+
+.media-icon:hover {
+  border: 1px solid green;
+  color: rgba(2, 163, 2, 0.815);
+}
+
+ul.footer__contat-info li,
+.footer__privacy li {
+  /* width: 13rem; */
+  margin: auto;
+  margin-bottom: 0.375rem;
+}
+
+.footer__privacy li {
+  margin-bottom: 10px;
+}
+
+ul.footer__contat-info img {
+  position: relative;
+  width: 16px;
+  top: 0;
+  margin: 5px;
+}
+
+.footer__copyright {
+  border-top: 1px solid #777;
+}
+
+.footer__copyright p {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Media query==================== */
+
+/* Tablet */
+@media (min-width: 40em) {
+  .footer {
+    text-align: left;
+  }
+
+  .footer__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .footer__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .contat__info {
+    width: 50%;
+  }
+
+}
+
+
+/* Desktop */
+@media (min-width: 64em) {
+  .footer__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 1rem;
+
+  }
+
+  .footer__privacy li {
+    width: 80%;
+  }
+
+}
